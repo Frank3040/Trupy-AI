@@ -1,0 +1,26 @@
+[project]
+name = "trupy_assistant"
+version = "1.0.0"
+description = "AI-powered chatbot for the Psychology Department at UPY University"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    "sqlalchemy>=2.0.0",
+    "aiosqlite>=0.20.0",
+    "openai>=2.21.0",
+    "python-dotenv>=1.0.0",
+    "tenacity>=9.1.4",
+    "redis>=5.0.0",
+    "slowapi>=0.1.9",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]

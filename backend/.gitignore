@@ -1,0 +1,46 @@
+# ─── Python ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ─── Virtual Environments ────────────────────────────
+.venv/
+venv/
+env/
+
+# ─── Environment Variables ───────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── uv ──────────────────────────────────────────────
+uv.lock
+
+# ─── Logs ────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Uploads ─────────────────────────────────────────
+uploads/
+
+# ─── IDE / Editor ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS Files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Docker ──────────────────────────────────────────
+postgres_data/
+
+# Markdown files for agent context
+*.md
