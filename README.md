@@ -15,7 +15,7 @@
 Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed for the Psychology Department of UPY University. This project served as the capstone for the Software Engineering course. Trupy AI acts as a virtual companion for students, providing a safe and supportive space to discuss psychology and mental well-being topics.
 
 ## Demo
-![Trupy AI Demo](images/trupy-chatui.png)
+![Trupy AI Demo](images/welcome.png)
 
 
 ![Trupy AI Demo](images/trupy-chatui.png)
@@ -24,28 +24,16 @@ Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed 
 ## Features
 
 ### Frontend
-- [Frontend Feature 1: Describe the feature]
-- [Frontend Feature 2: Describe the feature]
-- [Frontend Feature 3: Describe the feature]
+- **Responsive Two-Column Layout**: Dynamic sidebar and workspace architecture optimized for desktop, tablet, and mobile devices.
+- **Onboarding Workflow**: Customizable welcome experience offering "Stay Anonymous" or "Identity" modes to respect student privacy.
+- **Reactive Chat Interface**: Real-time messaging with smooth transitions, typing indicators, and auto-scrolling powered by Vue 3.
+- **Modern Design System**: A premium dark-theme UI utilizing `Composition API`, `oh-vue-icons`, and custom CSS variables.
 
 ### Backend
-- [Backend Feature 1: Describe the feature]
-- [Backend Feature 2: Describe the feature]
-- [Backend Feature 3: Describe the feature]
-
-
-## Technology Stack
-
-### Backend
-- Python 3.10+
-- FastAPI
-- Docker
-- Redis
-- SQLite
-
-### Frontend
-- Node.js
-- Vue.js
+- **Asynchronous API**: High-performance FastAPI backend designed for low-latency session and chat processing.
+- **Session Persistence**: Redis-integrated state management to maintain conversational context and session recovery.
+- **Safety & Crisis Protocols**: Intelligent keyword monitoring to identify urgent student concerns and provide appropriate routing.
+- **Flexible LLM Integration**: OpenAI-compatible endpoint support for seamless integration with local or cloud-based Large Language Models.
 
 ## Getting Started
 
