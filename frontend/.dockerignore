@@ -1,0 +1,41 @@
+# Dependencies
+node_modules
+.npm
+package-lock.json
+
+# Build output
+dist
+
+# IDE and Editors
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Configuration files (that shouldn't be in the image)
+.editorconfig
+.prettierrc.json
+.oxlintrc.json
+jsconfig.json
+eslint.config.js
+vitest.config.js
+
+# Docker
+Dockerfile.frontend
+.dockerignore
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Tests
+tests/
+coverage/
