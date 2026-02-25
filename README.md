@@ -10,9 +10,7 @@
   <img src="https://img.shields.io/badge/Redis-white?logo=redis" alt="Redis Badge"/>
 </p>
 
-## About The Project
-
-Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed for the Psychology Department of UPY University. This project served as the capstone for the Software Engineering course. Trupy AI acts as a virtual companion for students, providing a safe and supportive space to discuss psychology and mental well-being topics.
+Trupy AI is an AI-powered chatbot developed for the Psychology Department of UPY University. This project served as the capstone for the Software Engineering course. Trupy AI acts as a virtual companion for students, providing a safe and supportive space to discuss psychology and mental well-being topics.
 
 ## Demo
 ![Trupy AI Demo](images/welcome.png)
