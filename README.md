@@ -10,22 +10,16 @@
   <img src="https://img.shields.io/badge/Redis-white?logo=redis" alt="Redis Badge"/>
 </p>
 
----
-
-
 ## About The Project
 
 Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed for the Psychology Department of UPY University. This project served as the capstone for the Software Engineering course. Trupy AI acts as a virtual companion for students, providing a safe and supportive space to discuss psychology and mental well-being topics.
 
----
-
-## Demo / Screenshot
+## Demo
 ![Trupy AI Demo](images/trupy-chatui.png)
 
 
 ![Trupy AI Demo](images/trupy-chatui.png)
 
----
 
 ## Features
 
@@ -39,7 +33,6 @@ Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed 
 - [Backend Feature 2: Describe the feature]
 - [Backend Feature 3: Describe the feature]
 
----
 
 ## Technology Stack
 
@@ -53,7 +46,6 @@ Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed 
 ### Frontend
 - Node.js
 - Vue.js
----
 
 ## Getting Started
 
@@ -61,6 +53,9 @@ Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed 
 
 - [Docker](https://www.docker.com/)
 - [Git](https://git-scm.com/)
+- DeepSeek API key (or API key from your chosen AI provider compatible with the OpenAI library)
+    - For development I used Docker Model Runner, a technology developed by Docker forrunning and testing AI models locally. You can find more information about it here: [Docker Model Runner](https://docs.docker.com/ai/model-runner/).
+
 
 ### Installation & Setup (with Docker)
 
@@ -84,8 +79,6 @@ Trupy AI is the Minimum Viable Product (MVP) of an AI-powered chatbot developed 
 
 This will build and start the backend (FastAPI + Redis + SQLite) and frontend (Vue.js) services.
 
----
-
 ## Usage
 
 
@@ -103,7 +96,6 @@ To stop the services and remove volumes (data will be lost), run:
 ```bash 
 docker-compose down -v
 ```
----
 
 ## Future Work / Roadmap
 
@@ -113,5 +105,4 @@ docker-compose down -v
 - Analytics dashboard for usage statistics
 - Improved UI/UX and accessibility
 
----
 
