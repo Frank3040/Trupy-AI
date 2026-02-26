@@ -21,14 +21,8 @@ Trupy AI is an AI-powered chatbot developed for the Psychology Department of UPY
 
 ## Features
 
-### Frontend
-- **Responsive Two-Column Layout**: Dynamic sidebar and workspace architecture optimized for desktop, tablet, and mobile devices.
 - **Onboarding Workflow**: Customizable welcome experience offering "Stay Anonymous" or "Identity" modes to respect student privacy.
 - **Reactive Chat Interface**: Real-time messaging with smooth transitions, typing indicators, and auto-scrolling powered by Vue 3.
-- **Modern Design System**: A premium dark-theme UI utilizing `Composition API`, `oh-vue-icons`, and custom CSS variables.
-
-### Backend
-- **Asynchronous API**: High-performance FastAPI backend designed for low-latency session and chat processing.
 - **Session Persistence**: Redis-integrated state management to maintain conversational context and session recovery.
 - **Safety & Crisis Protocols**: Intelligent keyword monitoring to identify urgent student concerns and provide appropriate routing.
 - **Flexible LLM Integration**: OpenAI-compatible endpoint support for seamless integration with local or cloud-based Large Language Models.
