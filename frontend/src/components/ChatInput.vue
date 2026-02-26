@@ -59,29 +59,29 @@ function onKeydown(e) {
   display: flex;
   align-items: flex-end;
   gap: 10px;
-  padding: 14px 18px;
-  background: var(--bg-surface);
-  border-top: 1px solid var(--border);
+  padding: 20px 0;
 }
 
 textarea {
   flex: 1;
   resize: none;
-  background: var(--bg-input);
-  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-md);
-  padding: 10px 14px;
+  padding: 12px 16px;
   font-family: var(--font);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-primary);
   line-height: 1.5;
   outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: all 0.2s ease;
   overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 textarea::placeholder {
-  color: var(--text-muted);
+  color: var(--text-secondary);
+  opacity: 0.7;
 }
 
 textarea:focus {

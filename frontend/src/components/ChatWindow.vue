@@ -63,28 +63,34 @@ function handleStart({ anonymous, userProfile }) {
         </div>
 
         <template v-else>
-          <TransitionGroup name="msg" tag="div" class="msg-list">
-            <MessageBubble
-              v-for="msg in store.messages"
-              :key="msg.id"
-              :message="msg"
-            />
-          </TransitionGroup>
+          <div class="messages-inner">
+            <TransitionGroup name="msg" tag="div" class="msg-list">
+              <MessageBubble
+                v-for="msg in store.messages"
+                :key="msg.id"
+                :message="msg"
+              />
+            </TransitionGroup>
 
-          <div v-if="store.isLoading" class="typing">
-            <span /><span /><span />
-          </div>
+            <div v-if="store.isLoading" class="typing">
+              <span /><span /><span />
+            </div>
 
-          <div v-if="store.isConcluded" class="concluded-notice">
-            This session has concluded. Thank you for reaching out.
+            <div v-if="store.isConcluded" class="concluded-notice">
+              This session has concluded. Thank you for reaching out.
+            </div>
           </div>
         </template>
       </div>
 
-      <ChatInput
-        :disabled="!store.sessionStarted || store.isLoading || store.isConcluded"
-        @send="store.sendMessage"
-      />
+      <footer class="chat-footer">
+        <div class="footer-inner">
+          <ChatInput
+            :disabled="!store.sessionStarted || store.isLoading || store.isConcluded"
+            @send="store.sendMessage"
+          />
+        </div>
+      </footer>
     </template>
   </div>
 </template>
@@ -175,8 +181,31 @@ function handleStart({ anonymous, userProfile }) {
   padding: 24px 20px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  align-items: center;
   scroll-behavior: smooth;
+}
+
+.chat-footer {
+  width: 100%;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-inner {
+  width: 100%;
+  max-width: 760px;
+  padding: 0 20px;
+}
+
+.messages-inner {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .msg-list {

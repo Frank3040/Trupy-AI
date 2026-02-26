@@ -32,7 +32,7 @@ function startIdentified() {
 
 <template>
   <div class="welcome">
-    <div class="welcome-icon">🧠</div>
+    <div class="welcome-icon"><v-icon name="fa-robot" scale="3.5" fill="var(--primary-light)" /></div>
     <h2 class="welcome-title">Welcome to Trupy AI</h2>
     <p class="welcome-sub">Psychology Department · UPY University</p>
     <p class="welcome-desc">How would you like to proceed today?</p>
@@ -99,42 +99,44 @@ function startIdentified() {
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding: 40px 28px;
+  padding: 60px 40px;
   text-align: center;
   animation: fadeIn 0.4s ease;
 }
 
 .welcome-icon {
-  font-size: 2.8rem;
-  margin-bottom: 14px;
-  filter: drop-shadow(0 0 18px var(--primary-glow));
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 24px var(--primary-glow));
 }
 
 .welcome-title {
-  font-size: 1.3rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   letter-spacing: -0.02em;
 }
 
 .welcome-sub {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .welcome-desc {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--text-secondary);
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .btn-group {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   width: 100%;
-  max-width: 360px;
+  max-width: 480px;
 }
 
 .btn {
@@ -188,7 +190,7 @@ function startIdentified() {
 
 .identify-form {
   width: 100%;
-  max-width: 360px;
+  max-width: 480px;
   text-align: left;
 }
 
