@@ -34,7 +34,7 @@ Trupy AI is an AI-powered chatbot developed for the Psychology Department of UPY
 - [Docker](https://www.docker.com/)
 - [Git](https://git-scm.com/)
 - DeepSeek API key (or API key from your chosen AI provider compatible with the OpenAI library)
-    - For development I used Docker Model Runner, a technology developed by Docker forrunning and testing AI models locally. You can find more information about it here: [Docker Model Runner](https://docs.docker.com/ai/model-runner/).
+    - For development I used Docker Model Runner, a technology developed by Docker for running and testing AI models locally. You can find more information about it here: [Docker Model Runner](https://docs.docker.com/ai/model-runner/).
 
 
 ### Installation & Setup (with Docker)
