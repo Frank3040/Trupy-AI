@@ -1,5 +1,10 @@
 FROM python:3.11-alpine AS base
 
+# Python best practices
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PATH="/app/.venv/bin:$PATH"
+
 FROM base AS builder
 
 COPY --from=ghcr.io/astral-sh/uv:0.8.13 /uv /bin/uv
@@ -21,15 +26,25 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 FROM base
 
-RUN apk add --no-cache curl
+# Install curl for healthcheck and add non-root user
+RUN apk add --no-cache curl && \
+    adduser -D appuser
 
 COPY --from=builder /app /app
 
 WORKDIR /app
+
+# Create data directory and change ownership of everything to appuser
+RUN mkdir -p /app/data && \
+    chown -R appuser:appuser /app /app/.venv /app/data
+
+# Switch to the non-root user
+USER appuser
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s \
     CMD curl -f http://localhost:8000/health || exit 1
 
 EXPOSE 8000
 
-CMD ["/app/.venv/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# uvicorn is available on the path now due to ENV PATH above
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
