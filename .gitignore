@@ -1,2 +1,55 @@
 .devcontainer
 agent-context
+
+# ─── Python ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ─── Node.js / Vue ───────────────────────────────────
+node_modules/
+npm-debug.log
+yarn-error.log
+dist-ssr/
+frontend/dist/
+
+# ─── Virtual Environments ────────────────────────────
+.venv/
+venv/
+env/
+
+# ─── Environment Variables / Secrets ─────────────────
+.env
+.env.*
+!.env.example
+*.pem
+
+# ─── Package Managers ────────────────────────────────
+uv.lock
+# NOTE: package-lock.json is NOT ignored, it should be committed
+
+# ─── Logs ────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Uploads / Data ──────────────────────────────────
+uploads/
+backend/data/
+*.db
+*.sqlite3
+
+# ─── IDE / Editor ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS Files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
